@@ -1,0 +1,27 @@
+{% trans_default_domain 'dashboard' %}
+
+{% extends 'FrontEndBundle:dashboard:dashboard.html.twig' %}
+
+{% block dashboard_content %}
+
+    <div class="row">
+        <section class="col-sm-1"></section><!-- 1-col space -->
+        {% include 'WebridgeDeliveryBundle:Stats:index.html.twig' %}
+        <section class="col-sm-1"></section><!-- 1-col space-->
+        {% include 'WebridgeDeliveryBundle:Notifications:index.html.twig' %}
+    </div>
+
+    <div class="row">
+        <section class="col-sm-1"></section><!-- 1-col space -->
+        {% include 'WebridgeDeliveryBundle:Bids:index.html.twig' %}
+        <section class="col-sm-1"></section><!-- 1-col space -->
+        {% include 'WebridgeDeliveryBundle:Users:activity.html.twig' %}
+    </div>
+
+    <div class="row spacer-02">
+        <section class="col-sm-1"></section><!-- 1-col space -->
+        {% include 'WebridgeDeliveryBundle:Users:history.html.twig' %}
+        <section class="col-sm-1"></section><!-- 1-col space -->
+    </div>
+
+{% endblock %}

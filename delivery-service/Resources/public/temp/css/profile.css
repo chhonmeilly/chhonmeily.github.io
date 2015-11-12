@@ -1,0 +1,912 @@
+@import url("reset.css");
+@import url("../../css/front-end.css");
+
+html {
+    height: 100%;
+}
+
+body {
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	background: #f6f6f6;
+    height: 100%;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}
+
+.h2, h2 {
+    font-size: 30px;
+}
+
+.h3, h3 {
+    font-size: 24px;
+}
+
+.h4, h4 {
+    font-size: 18px;
+}
+
+.h5, h5 {
+    font-size: 14px;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+i {
+    font-style: italic;
+}
+
+/*Navbar top style*/
+
+.navbar-profile-dashboard {
+    background-image: none;
+    box-shadow: none;
+    border-bottom: 5px solid #cc680a; 
+}
+
+.navbar-brand.username-container {
+    margin-left: 0;
+    margin-top: 7px;
+}
+
+.user-name {
+	font-size: 35px;
+	font-weight: 700;
+	color: #FFF;
+	text-shadow: none;
+}
+
+.dashboard-title {
+	vertical-align: bottom;
+	color: #000;
+	font-weight: 700;
+	text-shadow: none;
+}
+
+.navigation-icon {
+    margin-left: 10px;
+}
+
+/*.navigation-icon li.active {
+    border: none;
+    border-bottom: none;
+}
+
+.navigation-icon li {
+   border: 1px solid #cc680a;
+   border-top: none;
+   border-bottom: none;
+}*/
+
+.navbar-profile-dashboard .navbar-nav > .active > a, 
+.navbar-profile-dashboard .navbar-nav > .active > a:focus, 
+.navbar-profile-dashboard .navbar-nav > .active > a:hover {
+    background: #008aae;
+} 
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background: #cc680a;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+    background: #008aae;
+}
+
+span.setting-icon,
+span.sign-out,
+span.help-icon {
+    font-size: 30px;
+    color: #FFF;
+    display: inline-block;
+}
+
+span.menu-name {
+    vertical-align: 5px;
+    margin-left: 10px;
+    color: #FFF;
+}
+
+/*switch language button style*/
+
+.switch-language-btn-container {
+	background: url(images/switch-language-bg.png) repeat;
+	margin: 15px 0 0 0;
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	/* Prevent background color leak outs */
+ 	-webkit-background-clip: padding-box; 
+  	-moz-background-clip:    padding; 
+  	background-clip:         padding-box;
+}
+
+.switch-language-btn-container > li > a {
+    padding: 3px 5px;
+    font-weight: 700;
+    color: #999;
+}
+
+.switch-language-btn-container > li.active > a, 
+.switch-language-btn-container > li.active > a:focus, 
+.switch-language-btn-container > li.active > a:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+	background: #87e0fd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+}
+
+.switch-language-btn-container span.flag {
+	background: url(images/eng.png) no-repeat;
+	width: 25px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	font-weight: 700;
+}
+
+.switch-language-btn-container span.flag.khmer {
+	background: url(images/khmer.png) no-repeat;
+} 
+
+/*End OF switch language button style*/
+
+/*END OF Navbar top style*/
+
+/*User Profile Sidebar*/
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
+}
+
+.header {
+	width: 100%;
+	float: left;
+	padding-bottom: 70px;
+}
+
+.user-profile-container {
+	float: left;
+	width: 100%;
+}
+
+.inner-user-profile {
+    background: #FFF;
+    padding: 2% 1%;
+    margin: 1% 1% 2% 1%;
+    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.35);
+}
+
+.user-profile {
+    padding-top: 1%;
+}
+
+.profile-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0%;
+    background: url(../images/photo-bg.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    margin: 25px 0 10px 0;
+    border: 5px solid rgba(255,255,255,0.3);
+}
+
+.bg-transparent {
+    background: rgba(0,0,0,0.5);
+}
+
+.user-short-info {
+    padding-bottom: 15px;
+}
+
+.user-short-info p {
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+span.dot {
+    padding: 0 5px;
+    vertical-align: 4px;
+}
+
+.user-info {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.name h2 {
+	color: #FFF;
+	font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.occupation {
+    margin-bottom: 10px;
+}
+
+.occupation h4,
+.section-title {
+	color: #FFF;
+	font-weight: 700;
+}
+
+.short-bio {
+    background: #2c2c2c;
+    margin: 0 0 0;
+    padding: 10px 20px;
+    color: #FFF;
+}
+
+.short-bio article {
+    padding-bottom: 40px;
+}
+
+ul.label-and-text-value {
+    margin: 20px 0;
+}
+
+ul.label-and-text-value .text-red {
+	color: #fe0000;
+	font-weight: 700;
+}
+
+ul.label-and-text-value li {
+    margin-bottom: 3px;
+}
+
+.label-and-text-value li span {
+	color: #FFF;
+}
+
+.account-detail-container {
+	position: relative;
+	margin: 0;
+	padding: 10px 20px;
+}
+
+.social-link-container {
+    width: 90%;
+    position: absolute;
+    top: -35px;
+}
+
+.account-detail-info {
+    margin-top: 11%;
+}
+
+.social-link {
+	text-align: center;
+}
+
+.social-link li {
+	display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    box-shadow: 0 3px 16px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 100%;
+    -moz-box-shadow: 100%;
+    -ms-box-shadow: ;
+}
+
+.social-link > li > a {
+    width: 64px;
+    height: 64px;
+    display: block;
+    text-indent: -999px;
+}
+
+.social-link > li > a.facebook {
+    background: url(images/facebook.png) no-repeat;
+}
+
+.social-link > li > a.twitter {
+    background: url(images/twitter-2.png) no-repeat;
+}
+
+.social-link > li > a.linked-in {
+    background: url(images/linkedin.png) no-repeat;
+}
+
+.user-setting-info {
+    background: #2c2c2c;
+    margin: 0 0 0;
+    padding: 10px 20px;
+}
+
+.user-setting-info .label-and-text-value li strong {
+	color: #44b7b2;
+}
+
+/*END OF User Profile Sidebar*/
+
+
+/*User Profile Form Area*/
+
+.page-title {
+	margin-bottom: 30px;
+}
+
+.profile-completion .well{
+	background-image: none;
+	box-shadow: none;
+	border: none;
+    padding: 10px;
+    min-height: auto;
+}
+
+.complete-progress {
+    width: 98%;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.progress {
+    width: 50%;
+    display: inline-block;
+    background: #FFF;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.progress-bar-success {
+	border-radius: 10px;
+    background-color: #5AAC56;
+}
+
+.form-completion-info {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-completion-info p {
+	margin: 0;
+    text-align: center;
+}
+
+.percentage {
+    color: #5AAC56;
+}
+
+/*Form Style in a class called profile-form-tab*/
+
+.profile-form-tab > .nav-tabs > li > a {
+    border-radius: 0;
+    padding: 5px 15px;
+    font-weight: 700;
+    color: #333;
+    font-size: 18px;
+}
+
+.profile-form-tab > .nav-tabs>li.active>a, 
+.profile-form-tab > .nav-tabs>li.active>a:focus, 
+.profile-form-tab > .nav-tabs>li.active>a:hover {
+    border-top: 9px solid #077cb3;
+}
+
+.profile-form-tab > .nav-tabs > li {
+    float: none;
+}
+
+.profile-form-tab > .nav > li {
+    display: inline-block;
+}
+
+.profile-form-tab .tab-pane {
+    padding-top: 27px;
+}
+
+.btn-save-container {
+    text-align: right;
+}
+
+h4.form-group-title {
+    color: #44b7b2;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    text-align: right;
+}
+
+.profile-form-tab .control-label {
+    font-weight: 700;
+    color: #666;
+}
+
+.profile-form-tab .form-control {
+    background: #e1e4ed;
+    border: none;
+    border-bottom: 3px solid #b2b2b2;
+}
+
+
+.profile-form-tab .form-control:focus {
+    box-shadow: none;
+    border-bottom: 3px solid #666;
+}
+
+.btn-save-container button,
+.btn-save-container button.btn-default:focus {
+    background: #008aae;
+    border: none;
+    border-bottom: 5px solid #005e77;
+    color: #FFF;
+    text-shadow: 0px 1px #000;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 15px 22px;
+}
+
+.btn-save-container button.btn-default:hover,
+.btn-save-container button.btn-default:active {
+    background: #005e77;
+    border-bottom: 5px solid #008aae;
+    color: #FFF;
+    text-shadow: 0px 1px #000;
+}
+
+.btn-save-container button.btn-default:focus {
+    border-bottom: none;
+}
+
+.profile-form-tab .form-control.select-blue {
+    background: #008aae;
+    border-bottom: none;
+    color: #FFF;
+}
+
+.profile-form-tab .radio,
+.profile-form-tab .checkbox {
+    padding-top: 0;
+}
+
+textarea#bioTextArea {
+    resize: vertical;
+}
+
+/*END OF Form Style in a class called profile-form-tab*/
+
+/*END OF User Profile Form Area*/
+
+/*Footer Style*/
+#sticky-footer {
+    height: auto;
+    width: 100%;
+    display: table;
+}
+
+.credit {
+    margin: 22px 0 20px 5%;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.footer-nav-link {
+    margin: 22px 3% 20px 0;
+    float: right;
+    display: inline-block;
+}
+
+.footer-nav-link li {
+    margin-right: 20px;
+}
+
+.footer-nav-link li a {
+    font-weight: 700;
+    text-shadow: none;
+}
+/*END OF Footer Style*/
+
+/*MEDIA QUERIES*/
+
+/*Phone Screensize 384px*/
+@media(max-width: 384px){
+    
+     .form-completion-info {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .progress {
+        width: 100%;
+    }
+
+    .user-name {
+        font-size: 24px;
+    }
+
+    .navbar-brand.username-container {
+        font-size: 13px;
+    }
+
+    .inner-user-profile { 
+        padding: 5% 1% 1% 1%;
+    }
+
+    .profile-image img {
+        width: 110px;
+        height: 110px;
+        margin: 15px 0 0 0;
+    }
+
+    .user-short-info {
+        padding-bottom: 8px;
+    }
+
+    .page-title {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .profile-form-tab .nav-tabs {
+        border-bottom: none;
+    }
+
+    .profile-form-tab > .nav > li {
+        width: 100%;
+        border-bottom: 1px solid #DDD;
+    }
+
+    .profile-form-tab > .nav-tabs > li > a {
+        margin-right: 0;
+    }
+
+    h4.form-group-title {
+        text-align: center;
+    }
+
+    .profile-form-tab .control-label {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .user-profile {
+        padding: 4%;
+    }
+
+    .credit {
+        text-align: center;
+        line-height: 1.4;
+        margin: 15px 0 0 0;
+    }
+
+    .footer-nav-link {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .footer-nav-link li {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 5px 0;
+    }
+
+    .btn-save-container {
+        text-align: center;
+    }
+
+    .btn-save-container button, 
+    .btn-save-container button.btn-default:focus {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .profile-form-tab .radio-inline, 
+    .profile-form-tab .checkbox-inline  {
+        display: inline;
+    } 
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #FFF;
+    }
+    
+}
+/*END OF Phablet Screensize 384px*/
+
+/*Phones Landscape Mode 480px*/
+@media(max-width: 480px){
+
+     .form-completion-info {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .progress {
+        width: 100%;
+    }
+
+    .inner-user-profile { 
+        padding: 4% 1% 2% 1%;
+        margin: 1% 1% 5% 1%;
+    }
+
+     .profile-form-tab .nav-tabs {
+        border-bottom: none;
+    }
+
+    .profile-form-tab > .nav > li {
+        width: 100%;
+        border-bottom: 1px solid #DDD;
+    }
+
+    .profile-form-tab > .nav-tabs > li > a {
+        margin-right: 0;
+    }
+
+    h4.form-group-title {
+        text-align: left;
+    }
+
+    .profile-form-tab .control-label {
+        margin-bottom: 10px;
+    }
+
+    .page-title {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .btn-save-container {
+        text-align: center;
+    }
+
+    .btn-save-container button, .btn-save-container button.btn-default:focus {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .profile-form-tab .radio-inline, 
+    .profile-form-tab .checkbox-inline  {
+        display: inline;
+    }
+
+    .credit {
+        text-align: center;
+        line-height: 1.4;
+        margin: 15px 0 0 0;
+    }
+
+    .footer-nav-link {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .footer-nav-link li {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 5px 0;
+    }
+
+}
+/*END OF Phones Landscape Mode 480px*/
+
+/*Tablet Devices 768px*/
+@media(max-width: 768px){
+    
+    .form-completion-info {
+        width: 100%;
+    }
+
+    .progress {
+        width: 100%;
+    }
+
+    .page-title {
+        margin: 20px 0;
+    }
+
+    .inner-user-profile {
+        padding: 5% 1% 2% 1%;
+        margin: 1% 1% 5% 1%;
+    }
+
+    .credit {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    h4.form-group-title {
+        text-align: left;
+    }
+
+    .profile-form-tab .control-label {
+        margin-bottom: 10px;
+    }
+
+    .credit {
+        text-align: center;
+        line-height: 1.4;
+        margin: 15px 0 0 0;
+    }
+
+    .footer-nav-link {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .profile-form-tab > .nav-tabs > li > a {
+        font-size: 15px;
+    }
+
+    .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navigation-icon {
+        margin-left: 0px;
+    }
+
+    .switch-language-btn-container {
+        background: none;
+    }
+
+    .navbar .navbar-nav .open .dropdown-menu>.active>a,
+    .navbar .navbar-nav .open .dropdown-menu>.active>a:focus,
+    .navbar .navbar-nav .open .dropdown-menu>.active>a:hover {
+        background-color: #008aae;
+        color: #FFF;
+        background-image: none;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #000;
+    }
+
+    .navbar-collapse.in {
+        overflow: visible;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #FFF;
+    }
+
+    .navbar-toggle {
+        border: 1px solid #FFF;
+        margin-top: 10px;
+    }
+
+    .navbar-header .navbar-toggle .icon-bar {
+        background-color: #FFF;
+    }
+
+    .navbar-default .navbar-toggle:focus, 
+    .navbar-default .navbar-toggle:hover {
+        background-color: #cc680a;
+    }
+
+    .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+        padding: 10px 15px 10px 10px;
+    }
+
+}
+/*END OF Tablet Devices 768px*/
+
+/*Medium Desktop Device 991px*/
+@media(max-width: 991px){
+    
+    .form-completion-info {
+        margin-bottom: 10px;
+    }
+
+    .form-completion-info {
+        width: 100%;
+    }
+
+    .progress {
+        width: 100%;
+    }
+
+    .page-title {
+        margin: 20px 0;
+    }
+
+    .profile-image img {
+        margin: 15px 0 0px 0;
+    }
+
+    .user-short-info {
+        padding-bottom: 5px;
+    }
+
+    .social-link li {
+        margin: 0 5px;
+    }
+
+    .credit {
+        text-align: center;
+        line-height: 1.4;
+        margin: 15px 0 0 0;
+    }
+
+    .footer-nav-link {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .footer-nav-link li {
+        text-align: center;
+        margin: 0 0 5px 0;
+        float: none;
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .switch-language-btn-container {
+        background: #FFF;
+    }
+
+}
+/*END OF Medium Desktop Device 991px*/
+
+/*Large screensize 1200px*/
+@media(min-width: 1200px){
+    
+    .form-completion-info {
+        width: 35%;
+    }
+
+    .progress {
+        width: 60%;
+    }
+
+}
+/*END OF Large screensize 1200px*/
+
+/*MEDIA QUERIES*/

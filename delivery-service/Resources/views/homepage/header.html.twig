@@ -1,0 +1,130 @@
+{% trans_default_domain 'homepage' %}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="pull-right" id="language">
+            <a
+                href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'km-KH'})) }}"
+            >
+                <div src="" class="flag flag-kh"/></div> ខ្មែរ
+            </a>
+            <a
+                href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en-US'})) }}"
+            >
+                <div src="" class="flag flag-gb"/></div> EN
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div class="navbar-header">
+                    <button
+                        type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"
+                    >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('home') }}">
+                        <div id="logo">PKG<span id="logo-color">SHIPR</span> </div>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div>
+                        <ul class="nav navbar-nav navbar-right menu">
+                            <li>
+                                <a href="#slideshow">{{ 'menu.home'|trans }}</a>
+                            </li>
+                            <li>
+                                <a href="#service-offer-section">{{ 'menu.service'|trans }}</a>
+                            </li>
+                            <li>
+                                <a href="#">{{ 'menu.opportunity'|trans }}</a>
+                            </li>
+
+                            {% set dropdown_open = null %}
+
+                            {% if app.session.flashBag.has('error') %}
+                                {% set dropdown_open = 'open' %}
+                            {% endif %}
+                            <li class="dropdown {{dropdown_open}}" id="menuLogin">
+                                <a href="#"
+                                    data-toggle="dropdown"
+                                    class="dropdown-toggle"
+                                    id="navLogin"
+                                >
+                                    {{ 'menu.login'|trans }}
+                                </a>
+                                <div class="dropdown-menu">
+                                    <form
+                                        class="form"
+                                        id="formLogin"
+                                        action="{{ path("fos_user_security_check") }}"
+                                        method="post"
+                                    >
+                                        <p>
+                                            <label>{{ 'form.username'|trans }} :</label>
+                                            <input
+                                                type="hidden"
+                                                name="_csrf_token"
+                                                value="{{ csrf_token('authenticate')  }}"
+                                            />
+                                            <input
+                                                class="form-control"
+                                                name="_username"
+                                                required="required"
+                                                id="username"
+                                                type="text"
+                                                placeholder="{{ 'form.username'|trans }}"
+                                            />
+                                        </p>
+                                        <p>
+                                            <label>{{ 'form.password'|trans }} :</label>
+                                            <input
+                                                class="form-control"
+                                                name="_password"
+                                                id="password"
+                                                required="required"
+                                                type="password"
+                                                placeholder="{{ 'form.password'|trans }}"
+                                            >
+                                        </p>
+
+                                        {% for flashMessage in app.session.flashbag.get('error') %}
+                                            <div class="alert alert-danger">
+                                                {# @TODO: Improve it latter #}
+                                                {{ flashMessage|trans({}, 'security') }}
+                                            </div>
+                                        {% endfor %}
+
+                                        <button
+                                            type="submit"
+                                            name="submit"
+                                            id="btnLogin"
+                                            class="btn bg-primary pull-right"
+                                        >
+                                            {{ 'btn.signin'|trans }}
+                                        </button>
+                                        <div class="form-description">
+                                            <span>{{ 'text.new.user'|trans }}</span>
+                                            <a href="#">{{ 'link.signup'|trans }}</a>
+                                            <div>
+                                                <a href="#">{{ 'link.forget.password'|trans }}</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+

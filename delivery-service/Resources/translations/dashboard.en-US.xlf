@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" target-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="bd1b4ef42f819a19f7423f17385e13f1" resname="header.navigation.toggle">
+        <source>header.navigation.toggle</source>
+        <target>Toggle navigation</target>
+      </trans-unit>
+      <trans-unit id="3ac5544759e21a6f9291cf0656910007" resname="header.navigation.language_switcher">
+        <source>header.navigation.language_switcher</source>
+        <target>Language Switcher</target>
+      </trans-unit>
+      <trans-unit id="d5e84bac1f01610543ce18659127619e" resname="header.navigation.settings">
+        <source>header.navigation.settings</source>
+        <target>Settings</target>
+      </trans-unit>
+      <trans-unit id="635567a228d114e5390232c4400bb321" resname="header.navigation.help">
+        <source>header.navigation.help</source>
+        <target>Help</target>
+      </trans-unit>
+      <trans-unit id="d4ae23ef3a048fa7d06c97b11a0fdc78" resname="header.navigation.signout">
+        <source>header.navigation.signout</source>
+        <target>Sign out</target>
+      </trans-unit>
+      <trans-unit id="cc431ea9e6e5e6f4be78a609caa948b5" resname="stats.delivery_bids">
+        <source>stats.delivery_bids</source>
+        <target>Delivery Bids</target>
+      </trans-unit>
+      <trans-unit id="f4ca054ac7553244e33f86642a44edcb" resname="stats.pending">
+        <source>stats.pending</source>
+        <target>Pending</target>
+      </trans-unit>
+      <trans-unit id="06fa315976eaaee4698a9f989eeb4edd" resname="stats.waiting">
+        <source>stats.waiting</source>
+        <target>Waiting</target>
+      </trans-unit>
+      <trans-unit id="d36837fd45d1374858a8d47e2a0dc502" resname="stats.welcome">
+        <source>stats.welcome</source>
+        <target>Welcome to your Dashboard, %name%!</target>
+      </trans-unit>
+      <trans-unit id="6a461f74f7814c2b8cf700fbdf13ea97" resname="stats.message">
+        <source>stats.message</source>
+        <target>Stay on track, create new delivery requests quickly and manage bids from eager couriers located all across Cambodia.</target>
+      </trans-unit>
+      <trans-unit id="f6f70bf48a8eb29b3f4eb33957951bc8" resname="header.navigation.dashboard">
+        <source>header.navigation.dashboard</source>
+        <target>Dashboard</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,381 @@
+button.btn-submit,
+button.btn-submit:focus,
+button.btn-submit:active,
+button.btn-submit:active:focus {
+	float: right;
+	background-color: #008aae;
+	color: #FFF;
+	border: none;
+	font-weight: normal;
+	padding: 10px 0;
+	margin-right: 15px;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+button.btn-submit:hover {
+	background-color: #269cb8;
+	color: #FFF;
+}
+
+button.btn-cancel {
+	padding: 10px 0;
+}
+
+.image-upload > input {
+	display: none;
+}
+
+.image-upload .btn-upload img {
+    pointer-events: none;
+}
+
+.image-upload .btn-upload:hover {
+	cursor: pointer;
+}
+
+.image-upload {
+	display: inline-block;
+	width: 25%;
+}
+
+.upload-button-container {
+	margin-left: 0px;
+	padding: 0 0 0 4%;
+}
+
+.section-title {
+	color: #fa8d28;
+	padding-left: 15px; 
+}
+
+.delivery-request .section-title {
+	padding-left: 0;
+}
+
+.delivery-request, 
+.add-new-address,
+.information {
+	margin-bottom: 30px;
+}
+
+/*Custom style for dropdown list*/
+.custom-dropdown {
+	position: relative;
+	vertical-align: middle;
+	margin-bottom: 0;
+	padding-right: 0;
+}
+
+.add-new-destination .form-control.custom-dropdown-select.custom-dropdown-select,
+.add-new-address .form-control.custom-dropdown-select.custom-dropdown-select,
+#information-form .form-control.custom-dropdown-select.custom-dropdown-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #008aae;
+	color: #FFF;
+	font-weight: 700;
+	border: none;
+	padding: 0px 5px;
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+}
+
+/* Custom dropdown arrow */
+.custom-dropdown::after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e114";
+	font-size: 14px;
+	right: 12px;
+	line-height: 1;
+	top: 35%;
+	color: #ffffff;
+}
+
+/* Custom dropdown arrow cover */
+.custom-dropdown::before {
+	width: 40px;
+	right: 0; top: 0; bottom: 0;
+	border-radius: 0 3px 3px 0;
+	background-color: #269cb8;
+	border-left: 1px solid rgba(0,0,0,.1);
+}
+
+.link-for-add-new a {
+	color: #008ba9;
+}
+
+.add-new-address .select-city::before {
+	right: 0px;
+}
+
+.add-new-address .select-city::after {
+	right: 10px;
+}
+
+.custom-alert-success,
+.custom-alert-danger {
+	padding: 10px 0;
+	background-color: #ff6b6b;
+	background-image: none;
+	border: none;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.custom-alert-success {
+	background-color: #45b7af;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+#itemDescription {
+	resize: vertical;
+}
+
+#add-new-address-modal {
+	top: 3%;
+}
+
+.add-new-destination .form-control,
+.add-new-address .form-control,
+#information-form .form-control {
+	background: #e1e4ed;
+	border: none;
+	border-bottom: 3px solid #b2b2b2;
+}
+
+
+.add-new-address .form-control:focus,
+#information-form .form-control:focus {
+	box-shadow: none;
+	border-bottom: 3px solid #666;
+}
+
+/*MEDIA QUERIES*/
+
+/*Phone Screensize 384px*/
+@media(max-width: 384px){
+
+	.add-new-address .container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.delivery-request h4 {
+		text-align: left;
+	}
+
+	form.add-new-address .custom-alert-success, 
+	form.add-new-address .custom-alert-danger {
+		width: 100%;
+	}
+
+	form.add-new-address button.btn-submit, 
+	form.add-new-address button.btn-submit:focus, 
+	form.add-new-address button.btn-submit:active, 
+	form.add-new-address button.btn-submit:active:focus {
+		width: 100%; 
+	}
+
+	form.add-new-address button.btn-cancel, 
+	form.add-new-address button.btn-cancel:focus, 
+	form.add-new-address button.btn-cancel:active, 
+	form.add-new-address button.btn-cancel:active:focus {
+		width: 100%;
+	}
+
+	form.add-new-destination button.btn-cancel, 
+	form.add-new-destination button.btn-cancel:focus, 
+	form.add-new-destination button.btn-cancel:active, 
+	form.add-new-destination button.btn-cancel:active:focus {
+		width: 100%;
+	}
+
+	.modal-footer .btn+.btn {
+		margin-left: 0;
+	}
+
+	.image-upload {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+}
+/*END OF Phone Screensize 384px*/
+
+/*Phones Landscape Mode 480px*/
+@media(max-width: 480px){
+
+	form.add-new-address button.btn-cancel, 
+	form.add-new-address button.btn-cancel:focus, 
+	form.add-new-address button.btn-cancel:active, 
+	form.add-new-address button.btn-cancel:active:focus {
+		width: 100%;
+	}
+
+	form.add-new-destination button.btn-cancel, 
+	form.add-new-destination button.btn-cancel:focus, 
+	form.add-new-destination button.btn-cancel:active, 
+	form.add-new-destination button.btn-cancel:active:focus {
+		width: 100%;
+	}
+
+	.modal-footer .btn+.btn {
+		margin-left: 0;
+	}
+
+	.add-new-address .container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.add-new-address .custom-alert-success, 
+	.add-new-address .custom-alert-danger {
+		width: 100%;
+		margin: 0 4% 15px 0; 
+	}
+
+	.add-new-address button.btn-submit, 
+	.add-new-address button.btn-submit:focus, 
+	.add-new-address button.btn-submit:active, 
+	.add-new-address button.btn-submit:active:focus {
+		width: 100%;
+		margin: 0 auto 20px auto;
+		float: none;
+	}
+
+	.image-upload {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+}
+/*END OF Phones Landscape Mode 480px*/
+
+/*Tablet Devices 768px*/
+@media(max-width: 768px){
+
+	.nopadding-left-mobile {
+		padding-left: 0;
+	}
+
+	.custom-alert-success, .custom-alert-danger {
+		width: 100%; 
+	}
+
+	.add-new-address .container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+}
+/*END OF Tablet Devices 768px*/
+
+/*Medium Desktop Device 991px*/
+@media(max-width: 991px){
+
+	.add-new-destination .container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.add-new-address .container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	form.add-new-destination button.btn-cancel, 
+	form.add-new-destination button.btn-cancel:focus, 
+	form.add-new-destination button.btn-cancel:active, 
+	form.add-new-destination button.btn-cancel:active:focus {
+		width: 100%;
+	}
+
+	form.add-new-address button.btn-cancel, 
+	form.add-new-address button.btn-cancel:focus, 
+	form.add-new-address button.btn-cancel:active, 
+	form.add-new-address button.btn-cancel:active:focus {
+		width: 100%;
+	}
+
+	.modal-footer .btn+.btn {
+		margin-left: 0;
+	}
+
+	.delivery-request, .add-new-address, .information {
+		margin-bottom: 0;
+	}
+
+	.nopadding-left-mobile {
+		padding-left: 0;
+	}
+
+	.nopadding {
+		padding: 0;
+	}
+
+	.add-new-address .select-district {
+		margin-left: 0;
+	}
+
+	.add-new-address .select-district::before {
+		right: 15px;
+	}
+
+	.add-new-address .select-district::after {
+		right: 25px;
+	}
+
+	.custom-alert-success, .custom-alert-danger {
+		width: 100%;
+		margin: 0 0 15px auto;
+	}
+
+	.information .custom-alert-success, 
+	.information .custom-alert-danger {
+		width: 100%;
+		margin: 0 0 15px 0;
+	}
+
+	button.btn-submit, 
+	button.btn-submit:focus, 
+	button.btn-submit:active, 
+	button.btn-submit:active:focus {
+		width: 100%;
+		margin: 0 auto 20px auto;
+		float: none;
+	}
+
+	.information button.btn-submit, 
+	.information button.btn-submit:focus, 
+	.information button.btn-submit:active, 
+	.information button.btn-submit:active:focus {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+
+}
+/*END OF Medium Desktop Device 991px*/
+
+/*Large screensize 1200px*/
+@media(min-width: 1200px){
+
+	.add-new-address .select-city::after {
+		right: 10px;
+	}
+
+}
+/*END OF Large screensize 1200px*/
+
+/*END OF MEDIA QUERIES*/

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title> Profile | Delivery Service Website </title>
+
+    <!-- Bootstrap -->
+    <link href="../../public/temp/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../../public/temp/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Profile CSS -->
+    <link href="../../public/temp/css/profile.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <!--navbar fixed to top-->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-profile-dashboard bg-primary">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand username-container" href="#">
+                        <span class="user-name">John Smith</span>
+                        <span class="dashboard-title">Profile's Dashboard</span>                    
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <nav id="bs-navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right navigation-icon">
+                            <li class="dropdown visible-xs visible-sm">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-globe sign-out"></span><span class="menu-name visible-xs-inline">Language Switcher</span></a>
+                                <ul class="switch-language-btn-container dropdown-menu">
+                                    <li class="active"><a href="#eng"><span class="flag"></span>ENG</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a class="khmer" href="#kh"><span class="flag khmer"></span>KHMER</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a class="setting-page" href="#"><span class="glyphicon glyphicon-cog setting-icon"></span><span class="menu-name visible-xs-inline">Setting</span></a></li>
+                            <li><a class="help-page" href="#"><span class="glyphicon glyphicon-question-sign help-icon"></span><span class="menu-name visible-xs-inline">Helps</span></a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-off sign-out"></span><span class="menu-name visible-xs-inline">Sign Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-pills navbar-right switch-language-btn-container hidden-xs hidden-sm visible-lg visible-md">
+                            <li class="active"><a href="#eng"><span class="flag"></span>ENG</a></li>
+                            <li><a class="khmer" href="#kh"><span class="flag khmer"></span>KHMER</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <section class="user-profile-container">
+        <div class="col-xs-12 col-sm-12 col-md-12 user-profile">
+            <div class="container-fluid inner-user-profile">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="profile-image">
+                        <div class="bg-transparent">
+                            <img src="../../public/temp/images/john-smith.jpg" alt="John Smith" class="img-circle">
+                            <div class="user-short-info">
+                                <p>Male, 22 <i><span class="dot">.</span>Phnom Penh</i></p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="user-info bg-primary">
+                        <div class="name">
+                            <h2>John Smith</h2>
+                        </div>
+                        <div class="occupation">
+                            <h4>W.E. Bridge Technologies</h4>
+                        </div>
+                    </div>
+                    <div class="short-bio visible-md visible-lg">
+                        <article>
+                            <h4 class="section-title">About <span class="text-primary">John</span></h4>
+                            <p>
+                                I am a father of 2 beautiful young daugthers. I am a web developer and web designer residing in PP.
+                            </p>
+                            <p>
+                                I enjoy doing web design and coding. I speak 3 languages French, English and my native language is Khmer.
+                            </p>
+                            <p>
+                                I ship often, and so should you.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="account-detail-container bg-primary visible-md visible-lg">
+                        <div class="social-link-container">
+                            <ul class="social-link">
+                                <li>
+                                    <a class="facebook" href="https://www.facebook.com/WE-Bridge-Technologies-1496633390571937/" title="facebook">facebook</a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="https://www.twitter.com/WE-Bridge-Technologies" title="twitter">twitter</a>
+                                </li>
+                                <li>
+                                    <a class="linked-in" href="https://www.linkedin.com/WE-Bridge-Technologies" title="linked-in">linked-in</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="account-detail-info">
+                            <h4 class="section-title">Account <span class="text-primary">Details</span></h4>
+                            <ul class="label-and-text-value">
+                                <li><strong>Accout Type:</strong> <span>Sender</span></li>
+                                <li><strong>Register Date:</strong> <span>September 9, 2015</span></li>
+                                <li><strong>Last Seen:</strong> <span>September 24, 2015</span></li>
+                            </ul> 
+                            <ul class="label-and-text-value">
+                                <li><strong>Email:</strong> <span class="text-red">Not Verified</span></li>
+                                <li><strong>Email Alert:</strong> <span>On</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-setting-info visible-md visible-lg">
+                        <h4 class="section-title">User <span class="text-primary">Settings</span></h4>
+                        <ul class="label-and-text-value">
+                            <li><strong>Email/Phone Notification:</strong> <span>Email only</span></li>
+                            <li><strong>Notification Frequency:</strong> <span>Every hour</span></li>
+                        </ul>
+                        <ul class="label-and-text-value">
+                            <li><strong>Display Age:</strong> <span>Yes</span></li>
+                            <li><strong>Display Email:</strong> <span>Yes</span></li>
+                            <li><strong>Show Location:</strong> <span>Yes</span></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-md-push-1 profile-form-container">
+                    <div class="container-fluid inner-profile-form-container">
+                        <div class="row">
+                            <h2 class="page-title"><strong>Edit Profile</strong></h2>
+                            <div class="profile-completion">
+                                <div class="well">
+                                    <div class="complete-progress">
+                                        <div class="form-completion-info">
+                                            <p><strong>Your Profile is <span class="text-success percentage">40%</span> complete.</strong></p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="profile-form-tab">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a></li>
+                                    <li role="presentation"><a href="#preferences" aria-controls="preferences" role="tab" data-toggle="tab">Preferences</a></li>
+                                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                                    <li role="presentation"><a href="#change-password" aria-controls="change-password" role="tab" data-toggle="tab">Change Password</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="general">
+                                        <form class="form-horizontal" action="#">
+                                            
+                                            <!--General Setting Section-->
+                                            
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">General Settings</h4>               
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-sm-3 control-label">Email</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputFullName" class="col-sm-3 control-label">Full Name</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputCompany" class="col-sm-3 control-label">Company</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputCompany" placeholder="Company">
+                                                </div>
+                                            </div>
+                                            <!--END OF General Setting Section-->
+
+                                            <!--Contact Info Section-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">Contact Info</h4>           
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAddress" class="col-sm-3 control-label">Address</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="selectCity" class="col-sm-3 control-label">City</label>
+                                                <div class="col-sm-6 col-sm-push-1">
+                                                    <select class="form-control select-blue">
+                                                        <option value="" selected>Select City</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputTel" class="col-sm-3 control-label">Phone</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="tel" class="form-control" id="inputTel" placeholder="Phone">
+                                                </div>
+                                            </div>
+                                            <!--END OF Contact Info Section-->
+
+                                            <!--About Me Section-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">About Me</h4>                 
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="bioTextArea" class="col-sm-3 control-label">Biography</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <textarea class="form-control" id="bioTextArea" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <!--END OF About Me-->
+
+                                            <!--Social Media Section-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">Social Media</h4>               
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputFacebook" class="col-sm-3 control-label">Facebook</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputFacebook" placeholder="Facebook URL">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputTwitter" class="col-sm-3 control-label">Twitter</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputTwitter" placeholder="Twitter URL">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputLinkedin" class="col-sm-3 control-label">LinkedIn</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputLinkedin" placeholder="LinkedIn URL">
+                                                </div>
+                                            </div>
+                                            <!--END OF Social Media Section-->
+                                            
+                                            <!--Button Save-->
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10 btn-save-container">
+                                                    <button type="submit" class="btn btn-default">Save Changes</button>
+                                                </div>
+                                            </div>
+                                            <!--END OF Button Save-->
+                                        </form>
+                                    </div>
+
+                                    <!--Preferences Tab-->
+                                    <div role="tabpanel" class="tab-pane fade" id="preferences">
+                                        <form class="form-horizontal" action="#">
+                                            
+                                            <!--Notification Section-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">Notification</h4>               
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Notification</label>
+                                                <div class="radio col-sm-8 col-sm-push-1">
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="true"> On
+                                                    </label>
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="false"> Off
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Send Updates</label>
+                                                <div class="checkbox col-sm-8 col-sm-push-1">
+                                                    <label class="checkbox-inline col-sm-4">
+                                                        <input type="checkbox" id="inlineCheckbox1" value="phone"> By Phone
+                                                    </label>
+                                                    <label class="checkbox-inline col-sm-4">
+                                                        <input type="checkbox" id="inlineCheckbox2" value="email"> By Email
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="selectFrequency" class="col-sm-3 control-label">Frequency</label>
+                                                <div class="col-sm-6 col-sm-push-1">
+                                                    <select class="form-control select-blue">
+                                                        <option value="" selected>Every hour</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--END OF Notification Section-->
+
+                                            <!--Email Setting Section-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">Email Settings</h4>           
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmailSetting" class="col-sm-3 control-label">Email</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="email" class="form-control" id="inputEmailSetting" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAlternateEmailSetting" class="col-sm-3 control-label">Alternate Email</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="email" class="form-control" id="inputAlternateEmailSetting" placeholder="Alternate Email">
+                                                </div>
+                                            </div>
+                                            <!--END OF Email Setting Section-->
+                                            
+                                            <!--Privacy Section-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">Privacy</h4>           
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Display Age</label>
+                                                <div class="radio col-sm-8 col-sm-push-1">
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioAge" id="inlineRadioAge1" value="true"> Yes
+                                                    </label>
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioAge" id="inlineRadioAge2" value="false"> No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Display Email</label>
+                                                <div class="radio col-sm-8 col-sm-push-1">
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioEmail" id="inlineRadioEmail1" value="true"> Yes
+                                                    </label>
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioEmail" id="inlineRadioEmail2" value="false"> No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Show Location</label>
+                                                <div class="radio col-sm-8 col-sm-push-1">
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioLocation" id="inlineRadioLocation1" value="true"> Yes
+                                                    </label>
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioLocation" id="inlineRadioLocation2" value="false"> No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!--END OF Privacy Section-->
+                                            
+                                            <!--Button Save-->
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10 btn-save-container">
+                                                    <button type="submit" class="btn btn-default">Save Changes</button>
+                                                </div>
+                                            </div>
+                                            <!--END OF Button Save-->
+                                        </form>
+                                    </div>
+                                    <!--END OF Preferences Tab-->
+
+                                    <!--Settings Tab-->
+                                    <div role="tabpanel" class="tab-pane fade" id="settings">
+                                        <form class="form-horizontal" action="#">
+
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">Site Settings</h4>           
+                                                </div>
+                                            </div>
+                                            <!--Default Locale-->
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Default Locale</label>
+                                                <div class="radio col-sm-8 col-sm-push-1">
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioLanguage" id="inlineRadioLanguage1" value="english"> English
+                                                    </label>
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioLanguage" id="inlineRadioLanguage2" value="khmer"> Khmer
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!--END OF Default Locale-->
+
+                                            <!--Currency-->
+                                            <div class="form-group">
+                                                <label for="selectFrequency" class="col-sm-3 control-label">Currency</label>
+                                                <div class="col-sm-6 col-sm-push-1">
+                                                    <select class="form-control select-blue">
+                                                        <option value="" selected>Khmer Riel (KHR)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--End Of Currency-->
+
+                                            <!--Account Setting-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">Account Settings</h4>           
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Account Type</label>
+                                                <div class="radio col-sm-8 col-sm-push-1">
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioAccountType" id="inlineRadioAccountType1" value="english"> Sender
+                                                    </label>
+                                                    <label class="radio-inline col-sm-4">
+                                                        <input type="radio" name="inlineRadioAccountType" id="inlineRadioAccountType2" value="khmer"> Courier
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAddress" class="col-sm-3 control-label">Confirmation</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputConfirmation" placeholder="Please type in 'confirm' to change accout type">
+                                                </div>
+                                            </div>
+                                            <!--END OF Account Setting-->                                            
+
+                                            <!--Button Save-->
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10 btn-save-container">
+                                                    <button type="submit" class="btn btn-default">Save Changes</button>
+                                                </div>
+                                            </div>
+                                            <!--END OF Button Save-->
+                                        </form>
+                                    </div>
+
+                                    <!--END OF Settings Tab-->
+
+                                    <!--Change Password Tab-->
+                                    <div role="tabpanel" class="tab-pane fade" id="change-password">
+                                        <form class="form-horizontal change-password-form" action="#" method="">
+                                            <!--Change Password-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <h4 class="form-group-title">Change Password</h4>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputOldPassword" class="col-sm-3 control-label">Old Password</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputOldPassword" placeholder="Old Password" name="oldPassword" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputNewPassword" class="col-sm-3 control-label">New Password</label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputNewPassword" placeholder="New Password" name="newPassword" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPasswordChange" class="col-sm-3 control-label">Password (again) </label>
+                                                <div class="col-sm-8 col-sm-push-1">
+                                                    <input type="text" class="form-control" id="inputPasswordAgain" placeholder="Password" name="passwordAgain" required>
+                                                </div>
+                                            </div>
+                                            <!--END OF Change Password-->
+
+                                            <!--Button Save-->
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10 btn-save-container">
+                                                    <button type="submit" class="btn btn-default">Save Changes</button>
+                                                </div>
+                                            </div>
+                                            <!--END OF Button Save-->
+                                        </form>
+                                    </div>
+                                    <!--END OF Change Password Tab-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+</div>
+
+<foooter id="sticky-footer" class="bg-primary">
+    <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="container-fluid">
+            <div class="credit">Copyright 2015-2016 W.E. Bridge Technologies. All right reserved.</div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6">
+        <ul class="navbar-nav footer-nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </div>
+</foooter>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../../public/temp/js/jquery-2.1.4.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../public/temp/js/bootstrap.min.js"></script>
+<script src="../../public/temp/js/profile.js"></script>
+</body>
+</html>

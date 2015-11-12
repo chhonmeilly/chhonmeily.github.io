@@ -1,0 +1,14 @@
+.flag {
+    width: 25px;
+    height: 15px;
+    background:url(../images/flags.png) no-repeat
+}
+
+.flag.flag-gb {
+    background-position: -25px 0;
+    display: inline-block;
+}
+.flag.flag-kh {
+    display: inline-block;
+    background-position: 0 -15px;
+}

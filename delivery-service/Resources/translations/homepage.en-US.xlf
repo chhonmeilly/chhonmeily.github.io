@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" target-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="e6ba72f4c80af2248dc41caa95b5ada7" resname="menu.home">
+        <source>menu.home</source>
+        <target>HOME</target>
+      </trans-unit>
+      <trans-unit id="f6683e5667726cdd9b5e5956135b6f59" resname="menu.service">
+        <source>menu.service</source>
+        <target>SERVICE</target>
+      </trans-unit>
+      <trans-unit id="dd866af3ff3c7ae748bb9dec1a1168e4" resname="menu.opportunity">
+        <source>menu.opportunity</source>
+        <target>OPPORTUNITY</target>
+      </trans-unit>
+      <trans-unit id="d7782189f7f2519f2ddc969f3a4ade94" resname="menu.login">
+        <source>menu.login</source>
+        <target>LOGIN</target>
+      </trans-unit>
+      <trans-unit id="9dbb4e93be23acd47c214cd7e1030121" resname="form.username">
+        <source>form.username</source>
+        <target>Username</target>
+      </trans-unit>
+      <trans-unit id="5351aae16cf99cb2a1cd701770608927" resname="form.password">
+        <source>form.password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="e0f678ea90ccee7234e7f1330a731b2d" resname="btn.signin">
+        <source>btn.signin</source>
+        <target>SIGN IN</target>
+      </trans-unit>
+      <trans-unit id="6b144ea2a3394a6f7211ea43ee951f20" resname="text.new.user">
+        <source>text.new.user</source>
+        <target>New User?</target>
+      </trans-unit>
+      <trans-unit id="88d48b297b8dd07ff4b908e4c801af73" resname="link.signup">
+        <source>link.signup</source>
+        <target>Sign up Today.</target>
+      </trans-unit>
+      <trans-unit id="10e92106f381b27d45a649a04f824423" resname="link.forget.password">
+        <source>link.forget.password</source>
+        <target>Forget your password?</target>
+      </trans-unit>
+      <trans-unit id="a7273e9f18d03e94befe412fe1c18028" resname="text.send.package">
+        <source>text.send.package</source>
+        <target>Send a Package</target>
+      </trans-unit>
+      <trans-unit id="190f1dcfc182d08c1327b8b4a91afc33" resname="btn.register.now">
+        <source>btn.register.now</source>
+        <target>Register Now</target>
+      </trans-unit>
+      <trans-unit id="3bf0416a9530d017702a731bff13e413" resname="text.make.money">
+        <source>text.make.money</source>
+        <target>Make Money by Helping Others</target>
+      </trans-unit>
+      <trans-unit id="d0be0fd55506f69b198493da0fc445a5" resname="btn.become.courier">
+        <source>btn.become.courier</source>
+        <target>Become a Courier</target>
+      </trans-unit>
+      <trans-unit id="6cd0b4d19f3661d3247186ea7378fee6" resname="text.how.it.work">
+        <source>text.how.it.work</source>
+        <target>HOW IT WORKS</target>
+      </trans-unit>
+      <trans-unit id="a3368dc4feb814a5e2a014f6d3c938b5" resname="text.list.items">
+        <source>text.list.items</source>
+        <target>List your package</target>
+      </trans-unit>
+      <trans-unit id="4d66cc88680e2597c9dbeb0ff75d925a" resname="text.list.items.description">
+        <source>text.list.items.description</source>
+        <target>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus purus, laoreet et tellus at, efficitur vehicula elit. Nulla vitae ante aliquam, vestibulum diam nec, rutrum lacus.
+        </target>
+      </trans-unit>
+      <trans-unit id="30f6a49f17f6853d3a9e35c48d9959ef" resname="text.accept.offer">
+        <source>text.accept.offer</source>
+        <target>Accept an offer</target>
+      </trans-unit>
+      <trans-unit id="89dbc79cbc6adf960dc65acc1cc6e75e" resname="text.accept.offer.description">
+        <source>text.accept.offer.description</source>
+        <target>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus purus, laoreet et tellus at, efficitur vehicula elit. Nulla vitae ante aliquam, vestibulum diam nec, rutrum lacus.
+    ​   </target>
+      </trans-unit>
+      <trans-unit id="d345a2011cef60c1a53964aa2f23da5b" resname="text.send.it.off">
+        <source>text.send.it.off</source>
+        <target>Send it off!</target>
+      </trans-unit>
+      <trans-unit id="b77940fa71a5fd06313eb49a3aa9dfb4" resname="text.send.it.off.description">
+        <source>text.send.it.off.description</source>
+        <target>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus purus, laoreet et tellus at, efficitur vehicula elit. Nulla vitae ante aliquam, vestibulum diam nec, rutrum lacus.
+        </target>
+      </trans-unit>
+      <trans-unit id="ac64cc62bdb1c21a7bd694bd9629daf5" resname="text.what.we.offer">
+        <source>text.what.we.offer</source>
+        <target>WHAT OUR SERVICE OFFER</target>
+      </trans-unit>
+      <trans-unit id="d69cfb06d604f1efeda04d03c5aec473" resname="text.schedule.delivery">
+        <source>text.schedule.delivery</source>
+        <target>SCHEDULE DELIVERIES TO</target>
+      </trans-unit>
+      <trans-unit id="5df31584ff3f6062f121f1de3b9bac3c" resname="text.anywhere">
+        <source>text.anywhere</source>
+        <target>ANYWHERE, ANYTIME</target>
+      </trans-unit>
+      <trans-unit id="4fb4fb1347f4bc88173d08887bed899d" resname="text.schedule.delivery.description">
+        <source>text.schedule.delivery.description</source>
+        <target>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus purus, laoreet et tellus at, efficitur vehicula elit. Nulla vitae ante aliquam, vestibulum diam nec, rutrum lacus. Curabitur placerat dictum elit sit amet venenatis. Quisque quis iaculis augue. Nunc posuere nibh dolor, ut elementum sapien maximus vitae. Aenean consectetur metus eu magna maximus, finibus viverra velit interdum. Curabitur eget dui quis nunc eleifend dictum.
+        </target>
+      </trans-unit>
+      <trans-unit id="9116e785c86d8530cbba132cb437a404" resname="text.get.notified">
+        <source>text.get.notified</source>
+        <target>GET NOTIFIED OF ANY</target>
+      </trans-unit>
+      <trans-unit id="e38ecd5f9ef28d42ee25133cf9870c51" resname="text.incoming.job">
+        <source>text.incoming.job</source>
+        <target>INCOMING JOBS INSTANLY</target>
+      </trans-unit>
+      <trans-unit id="b3825332ef6b8f16cc4c993124f235a0" resname="text.get.notified.description">
+        <source>text.get.notified.description</source>
+        <target>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus purus, laoreet et tellus at, efficitur vehicula elit. Nulla vitae ante aliquam, vestibulum diam nec, rutrum lacus. Curabitur placerat dictum elit sit amet venenatis. Quisque quis iaculis augue. Nunc posuere nibh dolor, ut elementum sapien maximus vitae. Aenean consectetur metus eu magna maximus, finibus viverra velit interdum. Curabitur eget dui quis nunc eleifend dictum.
+        </target>
+      </trans-unit>
+      <trans-unit id="44f44d837a4f9650171d4fcb1f279c47" resname="text.track.order">
+        <source>text.track.order</source>
+        <target>TRACK YOUR ORDER THROUGH</target>
+      </trans-unit>
+      <trans-unit id="2ac216fabda6273eb30dce3de8997a99" resname="text.web.mobile.sms">
+        <source>text.web.mobile.sms</source>
+        <target>WEB, MOBILE AND SMS</target>
+      </trans-unit>
+      <trans-unit id="29b3e30490fb31ef19bf2549b330488a" resname="text.track.order.description">
+        <source>text.track.order.description</source>
+        <target>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus purus, laoreet et tellus at, efficitur vehicula elit. Nulla vitae ante aliquam, vestibulum diam nec, rutrum lacus. Curabitur placerat dictum elit sit amet venenatis. Quisque quis iaculis augue. Nunc posuere nibh dolor, ut elementum sapien maximus vitae. Aenean consectetur metus eu magna maximus, finibus viverra velit interdum. Curabitur eget dui quis nunc eleifend dictum.
+        </target>
+      </trans-unit>
+      <trans-unit id="98617adc55babbbb34b7caa3e276982a" resname="text.let.us.know">
+        <source>text.let.us.know</source>
+        <target>LET US KNOW WHAT YOU NEED</target>
+      </trans-unit>
+      <trans-unit id="7048ab3821879d3eabe43087bc7fbca8" resname="text.let.us.know.description">
+        <source>text.let.us.know.description</source>
+        <target>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus purus, laoreet et tellus at, efficitur vehicula elit. Nulla vitae ante aliquam, vestibulum diam nec, rutrum lacus. Curabitur placerat dictum elit sit amet venenatis. Quisque quis iaculis augue. Nunc posuere nibh dolor, ut elementum sapien maximus vitae. Aenean consectetur metus eu magna maximus, finibus viverra velit interdum. Curabitur eget dui quis nunc eleifend dictum.
+        </target>
+      </trans-unit>
+      <trans-unit id="47514cdddfd1ced27e751462d0eab09a" resname="text.ask.question">
+        <source>text.ask.question</source>
+        <target>FREQUENTLY ASKED QUESTIONS</target>
+      </trans-unit>
+      <trans-unit id="db60ddb6f2d4a1c6a0fadf51c8c96511" resname="text.how.to.get.start">
+        <source>text.how.to.get.start</source>
+        <target>Q: How can I get started with the service?</target>
+      </trans-unit>
+      <trans-unit id="2c896f97f9f98b39c5614d17824b4523" resname="text.how.to.get.start.answer">
+        <source>text.how.to.get.start.answer</source>
+        <target>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus purus, laoreet et tellus at, efficitur vehicula elit. Nulla vitae ante aliquam, vestibulum diam nec, rutrum lacus. Curabitur placerat dictum elit sit amet venenatis.
+        </target>
+      </trans-unit>
+      <trans-unit id="354bd5a4a02e496f98952516da83647b" resname="text.how.much">
+        <source>text.how.much</source>
+        <target>Q: How much will it cost me?</target>
+      </trans-unit>
+      <trans-unit id="220c5d99726b8e993c6cbe1fb37cf10e" resname="text.what.area">
+        <source>text.what.area</source>
+        <target>Q: What areas do you currently service?</target>
+      </trans-unit>
+      <trans-unit id="c2f9c971e127a46c911366558c9e9154" resname="text.who.resonsible">
+        <source>text.who.resonsible</source>
+        <target>
+          Q: Who is responsible in the case that one of my packages is damaged or lost?
+        </target>
+      </trans-unit>
+      <trans-unit id="9a9128dd74f07e0fae5d23fa2da83048" resname="text.ready.to.start">
+        <source>text.ready.to.start</source>
+        <target>READY TO GET STARTED?</target>
+      </trans-unit>
+      <trans-unit id="c96f0b35c687d1133e89458bc34b6395" resname="btn.signup.now">
+        <source>btn.signup.now</source>
+        <target>SIGN UP NOW</target>
+      </trans-unit>
+      <trans-unit id="ed6a12d1f58f798d475349450dd67e44" resname="text.get.in.touch">
+        <source>text.get.in.touch</source>
+        <target>Get In Touch</target>
+      </trans-unit>
+      <trans-unit id="97a9a47fdaa0c657e5b97c125e727fc8" resname="text.services">
+        <source>text.services</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="cf168ed181837ba983b299cb7ee749c3" resname="link.letter">
+        <source>link.letter</source>
+        <target>Letter</target>
+      </trans-unit>
+      <trans-unit id="afbf72343971065cdceb5b778d76e769" resname="link.packages">
+        <source>link.packages</source>
+        <target>Packages</target>
+      </trans-unit>
+      <trans-unit id="2c086d92f0f1b22f8964877084d96c72" resname="link.heavy.items">
+        <source>link.heavy.items</source>
+        <target>Heavy Items</target>
+      </trans-unit>
+      <trans-unit id="d1e66b54f5d84b6adffe87264ee5c486" resname="link.corporate.product">
+        <source>link.corporate.product</source>
+        <target>Corporate Products</target>
+      </trans-unit>
+      <trans-unit id="227a07693bebc666981e5571c148cf86" resname="link.money.and cheques">
+        <source>link.money.and cheques</source>
+        <target>Money and Cheques</target>
+      </trans-unit>
+      <trans-unit id="f0d0ab299eb9f55bf63714301ec3d4c6" resname="link.our.guarantee">
+        <source>link.our.guarantee</source>
+        <target>Our Guarantee</target>
+      </trans-unit>
+      <trans-unit id="0c7847ec610146c73c5c3a59a6c1eacb" resname="text.opportunities">
+        <source>text.opportunities</source>
+        <target>Opportunities</target>
+      </trans-unit>
+      <trans-unit id="108d8583722d63c9c3691c77ac97724e" resname="link.career">
+        <source>link.career</source>
+        <target>Careers</target>
+      </trans-unit>
+      <trans-unit id="320eca50daaab33a1580de27bf4549af" resname="link.partnership">
+        <source>link.partnership</source>
+        <target>Partnerships</target>
+      </trans-unit>
+      <trans-unit id="3a8bebfd74e611b908dc97df931b857f" resname="link.investors">
+        <source>link.investors</source>
+        <target>Investors</target>
+      </trans-unit>
+      <trans-unit id="9ea186117d594204cb9ca47a642dc109" resname="text.support">
+        <source>text.support</source>
+        <target>Support</target>
+      </trans-unit>
+      <trans-unit id="8d956a66d460beacc22dfea62fd2a899" resname="link.service.infor">
+        <source>link.service.infor</source>
+        <target>Service Information</target>
+      </trans-unit>
+      <trans-unit id="6807feb4b5cffafee1c3a2407f230bcf" resname="link.troubleshooting">
+        <source>link.troubleshooting</source>
+        <target>Troubleshooting</target>
+      </trans-unit>
+      <trans-unit id="199b50e35e723bf4af836e863938fcb9" resname="link.help.desk">
+        <source>link.help.desk</source>
+        <target>Help Desk</target>
+      </trans-unit>
+      <trans-unit id="4c1fded86ffea9efd8591f4b08556209" resname="link.contact.us">
+        <source>link.contact.us</source>
+        <target>Contact Us</target>
+      </trans-unit>
+      <trans-unit id="215b1381d10e0157ca6bd780963b8f95" resname="link.copy.right">
+        <source>link.copy.right</source>
+        <target>Copyright © PKGSHIPR 2015-2016</target>
+      </trans-unit>
+      <trans-unit id="e17bffd382c781ed0a61126672831184" resname="link.term.of.service">
+        <source>link.term.of.service</source>
+        <target>Term of Service</target>
+      </trans-unit>
+      <trans-unit id="d43e2a99e8505d596afb96729a84c103" resname="link.privacy.policy">
+        <source>link.privacy.policy</source>
+        <target>Privacy Policy</target>
+      </trans-unit>
+      <trans-unit id="cc9a2bb3f2f7122a3dacaf9bd5b67914" resname="text.title.slide1">
+        <source>text.title.slide1</source>
+        <target>Deliver items in Cambodia quickly and easily</target>
+      </trans-unit>
+      <trans-unit id="13d6878d09265eeea21f3a67ab981ee1" resname="text.title.slide1.description">
+        <source>text.title.slide1.description</source>
+        <target>The atmosphere in Chania has a touch of Florence and Venice</target>
+      </trans-unit>
+      <trans-unit id="c972958ee499d749d6abc13224a666d6" resname="text.title.slide2">
+        <source>text.title.slide2</source>
+        <target>Deliver items in Cambodia quickly and easily</target>
+      </trans-unit>
+      <trans-unit id="abfd1bcb84b68db2f0d67674eaee5069" resname="text.title.slide2.description">
+        <source>text.title.slide2.description</source>
+        <target>The atmosphere in Chania has a touch of Florence and Venice</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

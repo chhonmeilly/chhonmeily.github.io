@@ -1,0 +1,73 @@
+{% trans_default_domain 'homepage' %}
+<div class="jumbotron" id="footer">
+    <div class="row">
+        <div class="col-md-3">
+            <h3>{{ 'text.get.in.touch'|trans }}</h3>
+            <img
+                src="{{asset('bundles/frontend/images/icon_fb.png')}}"
+                class="social-icon"
+            >
+            <img
+                src="{{asset('bundles/frontend/images/icon_gp.png')}}"
+                class="social-icon"
+            >
+            <img
+                src="{{asset('bundles/frontend/images/icon_tw.png')}}"
+                class="social-icon"
+            >
+            <img
+                src="{{asset('bundles/frontend/images/icon_ln.png')}}"
+                class="social-icon"
+            >
+        </div>
+        <div class="col-md-3">
+            <h3>{{ 'text.services'|trans }}</h3>
+            <ul>
+                <li>{{ 'link.letter'|trans }}</li>
+                <li>{{ 'link.packages'|trans }}</li>
+                <li>{{ 'link.heavy.items'|trans }}</li>
+                <li>{{ 'link.corporate.product'|trans }}</li>
+                <li>{{ 'link.money.and cheques'|trans }}</li>
+                <li>{{ 'link.our.guarantee'|trans }}</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>{{ 'text.opportunities'|trans }}</h3>
+            <ul>
+                <li>{{ 'link.career'|trans }}</li>
+                <li>{{ 'link.partnership'|trans }}</li>
+                <li>{{ 'link.investors'|trans }}</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>{{ 'text.support'|trans }}</h3>
+            <ul>
+                <li>{{ 'link.service.infor'|trans }}</li>
+                <li>{{ 'link.troubleshooting'|trans }}</li>
+                <li>{{ 'link.help.desk'|trans }}</li>
+                <li>{{ 'link.contact.us'|trans }}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" id="footer-shadow">
+        <div class="container">
+            <img
+                src="{{asset('bundles/frontend/images/shadow-bottom.png')}}"
+                class="img-responsive"
+            >
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-6">
+            <h4>{{ 'link.copy.right'|trans }}</h4>
+        </div>
+        <div class="col-md-3">
+            <h4>{{ 'link.term.of.service'|trans }}</h4>
+        </div>
+        <div class="col-md-3">
+            <h4>{{ 'link.privacy.policy'|trans }}</h4>
+        </div>
+    </div>
+</div>
+
+

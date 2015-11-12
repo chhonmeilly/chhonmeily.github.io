@@ -1,0 +1,852 @@
+/* general */
+body {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6 !important;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.spacer-01 {
+  margin-top: 10px;
+}
+.spacer-02 {
+  margin-bottom: 40px;
+}
+.spacer-03 {
+  padding-bottom: 20px;
+}
+
+/* colors */
+.fg-primary,
+.fg-primary:hover,
+a.fg-primary:focus,
+a.fg-primary:hover {
+    color: #fa8e2a;
+}
+
+.btn.bg-primary {
+    color: #ffffff;
+}
+
+.btn.bg-primary:hover,
+.fg-secondary,
+.fg-secondary:hover,
+a.fg-secondary:focus,
+a.fg-secondary:hover {
+    color: #077cb3;
+}
+
+.fg-tertiary,
+.fg-tertiary:hover,
+a.fg-tertiary:focus,
+a.fg-tertiary:hover {
+    color: #5AAC56;
+}
+
+.bg-primary,
+.bg-primary:hover,
+a.bg-primary:focus,
+a.bg-primary:hover {
+    background-color: #fa8e2a;
+}
+
+.bg-secondary,
+.bg-secondary:hover,
+a.bg-secondary:focus,
+a.bg-secondary:hover {
+    background-color: #077cb3;
+}
+
+.bg-tertiary,
+.bg-tertiary:hover,
+a.bg-tertiary:focus,
+a.bg-tertiary:hover {
+    background-color: #5AAC56;
+}
+
+/* top bar */
+.header {
+	width: 100%;
+	float: left;
+	padding-bottom: 70px;
+}
+
+.navbar-profile-dashboard {
+    background-image: none;
+    box-shadow: none;
+    border-bottom: 5px solid #cc680a;
+}
+
+.navbar-brand.username-container {
+    margin-left: 0;
+    margin-top: 7px;
+}
+
+.user-name {
+	font-size: 35px;
+	font-weight: 700;
+	color: #FFF;
+	text-shadow: none;
+}
+
+.dashboard-title {
+	vertical-align: bottom;
+	color: #000;
+	font-weight: 700;
+	text-shadow: none;
+}
+
+.navigation-icon {
+    margin-left: 10px;
+}
+
+.navbar-profile-dashboard .navbar-nav > .active > a,
+.navbar-profile-dashboard .navbar-nav > .active > a:focus,
+.navbar-profile-dashboard .navbar-nav > .active > a:hover {
+    background: #008aae;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background: #008aae;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background: #008aae;
+}
+
+span.setting-icon,
+span.sign-out,
+span.help-icon {
+    font-size: 30px;
+    color: #FFF;
+    display: inline-block;
+}
+
+span.menu-name {
+    vertical-align: 5px;
+    margin-left: 10px;
+    color: #FFF;
+}
+
+/*switch language button style*/
+
+.switch-language-btn-container {
+	background: url("../images/switch-language-bg.jpg") repeat;
+	margin: 15px 0 0 0;
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	/* Prevent background color leak outs */
+ 	-webkit-background-clip: padding-box;
+  	-moz-background-clip:    padding;
+  	background-clip:         padding-box;
+}
+
+.switch-language-btn-container > li > a {
+    padding: 3px 5px;
+    font-weight: 700;
+    color: #999;
+    text-shadow: 1px 1px #000;
+}
+
+.switch-language-btn-container > li.active > a,
+.switch-language-btn-container > li.active > a:focus,
+.switch-language-btn-container > li.active > a:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+	background: #87e0fd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+}
+
+.switch-language-btn-container span.flag {
+	background: url("../images/eng.jpg") no-repeat;
+	width: 25px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	font-weight: 700;
+}
+
+.switch-language-btn-container span.flag.khmer {
+	background: url("../images/khmer.jpg") no-repeat;
+}
+
+/* body */
+section.box {
+  background-color: #FFF;
+  margin-top: 40px;
+  min-height: 275px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.inner-content {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.box-content {
+  margin: 15px 0 20px 0;
+  font-weight: normal;
+}
+
+/* welcome stats */
+#welcome-stats .circle {
+  display: inline-block;
+	width: 145px;
+	height: 145px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border-radius: 75px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  margin: 20px 6px;
+  padding-top: 25px;
+}
+#welcome-stats #bids {
+  background-color: #45B7AF;
+}
+#welcome-stats #pending {
+  background-color: #FF6B6B;
+}
+#welcome-stats #waiting {
+  background-color: #65C3DF;
+}
+
+.lg-num {
+  font-size: 65px;
+  line-height: 1;
+}
+.circle-subtitle {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.section-title {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#welcome-text {
+  margin: 5px 0 20px 0;
+  font-weight: normal;
+}
+
+/* notifications box */
+#notify span#count {
+  color: #FFF;
+  padding: 2px 7px 2px 6px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#notify #left-arrow {
+  color: #FFF;
+  padding: 4px 10px 4px 9px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#notify #right-arrow {
+  color: #FFF;
+  padding: 4px 10px 4px 9px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: right;
+}
+
+.sub-box {
+  padding-bottom: 15px;
+}
+
+#notify .last *,
+.sub-box * { /* remove left & right padding from children (col-sm-x) */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.inner-text {
+  padding-right: 5px;
+}
+
+.accept-deny {
+  width: 28px;
+  height: 28px;
+}
+
+/* delivery bids */
+#bids-list .inner-box {
+  background-color: #F6F6F6;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#bids-list .inner-box .sub-box:last-of-type {
+  padding-bottom: 0;
+}
+
+#bids-list select {
+  width: 140px;
+  border: none;
+  padding: 3px;
+  color: #FFF;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#bids-list .bid {
+  background-color: #FFF;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+
+#bids-list .bid.blue {
+  border-left: 10px solid #64C3DF;
+}
+
+#bids-list .bid.pink {
+  border-left: 10px solid #F7ABD2;
+}
+
+#bids-list .bid.green {
+  border-left: 10px solid #62CE94;
+}
+
+#bids-list img.avatar {
+  width: 48px;
+  height: 48px;
+}
+
+#bids-list .date {
+  font-size: 12px;
+}
+
+#bids-list .sub-info {
+  color: #45B7AF;
+  padding-right: 10px;
+}
+
+#bids-list .page-button {
+  color: #FFF;
+  padding: 4px 5px 4px 9px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+#bids-list .page-button:hover {
+  background-color: #FA8E2A; /* consider another way for easier modifications */
+}
+
+/* current bids */
+#bids-activity {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#current-bids {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* latest activity */
+#latest-activity .vert-line-sm,
+#current-bids .vert-line-sm {
+  border-left: 5px solid #D7DADF;
+  margin-left: -4px;
+  height: 15px;
+}
+
+#latest-activity .vert-line-lg,
+#current-bids .vert-line-lg {
+  border-left: 5px solid #D7DADF;
+  margin-left: -4px;
+  height: 30px;
+}
+
+#latest-activity .sub-box,
+#current-bids .sub-box {
+  padding-bottom: 3px;
+}
+
+#latest-activity .icon,
+#current-bids .icon {
+  width: 32px;
+  height: 32px;
+}
+
+#latest-activity .title-text,
+#current-bids .title-text {
+  margin-top: 5px;
+}
+
+#latest-activity .info-text,
+#current-bids .info-text {
+  margin-top: -5px;
+}
+
+/* create a delivery request */
+#create-delivery {
+
+}
+
+/* history */
+#history table th {
+  text-align: center;
+}
+
+#history .star {
+  width: 18px;
+  height: 18px;
+}
+
+#history .box-content {
+  margin-bottom: 0;
+}
+
+#history #see-all {
+  padding-bottom: 20px;
+}
+
+/****** [ MEDIA QUERIES ] ******/
+/* welcome circle fix */
+@media screen and (max-width: 1298px) and (min-width: 1185px) {
+  #welcome-stats .circle {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 1184px) and (min-width: 1109px) {
+  #welcome-stats .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .lg-num {
+    font-size: 50px;
+  }
+
+  #bids-list select {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 1108px) and (min-width: 1062px) {
+  #welcome-stats .circle {
+    width: 105px;
+    height: 105px;
+    padding-top: 15px;
+  }
+
+  .lg-num {
+    font-size: 50px;
+  }
+
+  .circle-subtitle {
+    font-size: 14px;
+  }
+
+  #bids-list select {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 1061px) and (min-width: 992px) {
+  #welcome-stats .circle {
+    width: 105px;
+    height: 105px;
+    padding-top: 15px;
+  }
+
+  .lg-num {
+    font-size: 50px;
+  }
+
+  .circle-subtitle {
+    font-size: 14px;
+  }
+
+  #bids-list select {
+    width: 125px;
+  }
+
+  #bids-list,
+  #latest-activity .info-text,
+  #current-bids .info-text,
+  #notify .inner-text,
+  #welcome-stats #welcome-text,
+  #create-delivery .box-content,
+  #history td,
+  #see-all a {
+    font-size: 14px;
+  }
+
+  #bids-list,
+  #welcome-stats,
+  #notify,
+  #latest-activity,
+  #current-bids,
+  #create-delivery,
+  #history {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  #welcome-stats .circle {
+    width: 90px;
+    height: 90px;
+    padding-top: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .lg-num {
+    font-size: 35px;
+  }
+
+  .circle-subtitle {
+    font-size: 12px;
+  }
+
+  .accept-deny {
+    width: 21px;
+    height: 21px;
+  }
+
+  #latest-activity .title-text,
+  #latest-activity .info-text {
+    padding-left: 10px;
+  }
+
+  #current-bids .title-text,
+  #current-bids .info-text {
+    padding-left: 10px;
+  }
+
+  #bids-list select {
+    width: 125px;
+  }
+
+  #bids-list .bid {
+    padding: 2px;
+    font-size: 12px;
+  }
+
+  #bids-list,
+  #latest-activity .info-text,
+  #current-bids .info-text,
+  #notify .inner-text,
+  #welcome-stats #welcome-text,
+  #create-delivery .box-content,
+  #history td,
+  #see-all a {
+    font-size: 14px;
+  }
+
+  #bids-list,
+  #welcome-stats,
+  #notify,
+  #latest-activity,
+  #current-bids,
+  #create-delivery,
+  #history {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #bids-list .page-button {
+    padding: 2px 2px 2px 5px;
+    margin: 0 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-form-tab > .nav-tabs > li > a {
+      font-size: 15px;
+  }
+
+  .navbar-collapse {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .navigation-icon {
+      margin-left: 0px;
+  }
+
+  .switch-language-btn-container {
+      background: none;
+  }
+
+  .navbar .navbar-nav .open .dropdown-menu>.active>a,
+  .navbar .navbar-nav .open .dropdown-menu>.active>a:focus,
+  .navbar .navbar-nav .open .dropdown-menu>.active>a:hover {
+      background-color: #008aae;
+      color: #FFF;
+      background-image: none;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+      color: #FFF;
+  }
+
+  .navbar-collapse.in {
+      overflow: visible;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+      border-color: transparent;
+  }
+
+  .navbar-default .navbar-toggle {
+      border-color: #FFF;
+  }
+
+  .navbar-toggle {
+      border: 1px solid #FFF;
+      margin-top: 10px;
+  }
+
+  .navbar-header .navbar-toggle .icon-bar {
+      background-color: #FFF;
+  }
+
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+      background-color: #cc680a;
+  }
+
+  .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+      padding: 10px 15px 10px 10px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  .row {
+    width: 95%;
+    margin: 0 auto !important;
+  }
+
+  section.box#welcome-stats {
+    margin-top: 90px;
+  }
+
+  section.box,
+  section .section-title {
+    margin-top: 0;
+  }
+
+  #latest-activity .title-text,
+  #latest-activity .info-text {
+    padding-left: 10px;
+  }
+
+  #current-bids .title-text,
+  #current-bids .info-text {
+    padding-left: 10px;
+  }
+
+  #bids-list {
+    margin-bottom: 20px;
+  }
+
+  #bids-list select {
+    width: 100%;
+  }
+
+  #bids-list .col-sm-6.right {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  #bids-list .bid {
+    padding: 5px;
+  }
+
+  img.accept-deny {
+    width: 40px;
+    height: 40px;
+  }
+
+  #bids-list,
+  #latest-activity .info-text,
+  #current-bids .info-text,
+  #notify .inner-text,
+  #welcome-stats #welcome-text,
+  #create-delivery .box-content,
+  #history thead,
+  #history td,
+  #see-all a {
+    font-size: 14px;
+  }
+
+  #bids-list,
+  #welcome-stats,
+  #notify,
+  #latest-activity,
+  #current-bids,
+  #create-delivery,
+  #history {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #bids-list .page-button {
+    padding: 5px 7px 5px 10px;
+    margin: 0 5px;
+  }
+
+  #history #see-all {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  #welcome-stats .circle {
+    width: 90px;
+    height: 90px;
+    padding-top: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .lg-num {
+    font-size: 35px;
+  }
+
+  .circle-subtitle {
+    font-size: 12px;
+  }
+
+  .user-name {
+      font-size: 26px;
+  }
+
+  .dashboard-title {
+      font-size: 14px;
+  }
+
+  img.accept-deny {
+    width: 32px;
+    height: 32px;
+  }
+
+  #bids-list,
+  #latest-activity .title-text,
+  #latest-activity .info-text,
+  #current-bids .title-text,
+  #current-bids .info-text,
+  #notify .inner-text,
+  #welcome-stats #welcome-text,
+  #create-delivery .box-content,
+  #history thead,
+  #history td,
+  #see-all a {
+    font-size: 13px;
+  }
+
+  section.box {
+    min-height: 220px;
+  }
+}
+
+@media screen and (max-width: 453px) and (min-width: 368px) {
+  .user-name {
+      font-size: 24px;
+  }
+
+  .dashboard-title {
+      font-size: 12px;
+  }
+
+  img.accept-deny {
+    width: 28px;
+    height: 28px;
+  }
+
+  #bids-list .bid {
+    font-size: 11px;
+  }
+
+  #bids-list img.avatar {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .user-name {
+      font-size: 18px;
+  }
+
+  .dashboard-title {
+      font-size: 12px;
+      vertical-align: inherit;
+  }
+
+  img.accept-deny {
+    width: 20px;
+    height: 20px;
+  }
+
+  #bids-list .page-button {
+    padding: 2px 4px 2px 5px;
+    margin: 0 3px;
+  }
+
+  #bids-list .bid {
+    font-size: 9px;
+  }
+
+  #bids-list .date {
+    font-size: 9px;
+  }
+
+  #bids-list img.avatar {
+    width: 100%;
+    height: 100%;
+  }
+}

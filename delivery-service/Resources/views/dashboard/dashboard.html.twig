@@ -1,0 +1,145 @@
+{% trans_default_domain 'dashboard' %}
+
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+        '@FrontEndBundle/Resources/public/css/dashboard.css'
+        '@FrontEndBundle/Resources/public/css/reset.css'
+        '@FrontEndBundle/Resources/public/css/front-end.css'
+    %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
+{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+    <header class="header">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-profile-dashboard bg-primary">
+            <div class="container-fluid">
+                <!-- brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button 
+                        type="button" 
+                        class="navbar-toggle collapsed" 
+                        data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"
+                    >
+                        <span class="sr-only">{{ 'header.navigation.toggle' | trans }}</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand username-container" href="#">
+                        <span class="user-name">{{ app.user.firstName ~ ' ' ~ app.user.lastName}}</span>
+                        <span class="dashboard-title">{{ 'header.navigation.dashboard' | trans }}</span>
+                    </a>
+                </div>
+
+                <!-- collect the nav links, forms, and other content for toggling -->
+                <nav id="bs-navbar" class="navbar-collapse collapse in">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right navigation-icon">
+                            <li class="dropdown visible-xs visible-sm">
+                                <a 
+                                    href="#"
+                                    class="dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    role="button"
+                                >
+                                    <span class="glyphicon glyphicon-globe sign-out"></span>
+                                    <span class="menu-name visible-xs-inline">
+                                        {{ 'header.navigation.language_switcher' | trans }}
+                                    </span>
+                                </a>
+                                <ul class="switch-language-btn-container dropdown-menu">
+                                    <li>
+                                        <a 
+                                            class="khmer" 
+                                            href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'km-KH'})) }}"
+                                        >
+                                            <span class="flag khmer"></span>
+                                                                                                                              ខ្មែរ  
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a
+                                            href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en-US'})) }}"
+                                        >
+                                            <span class="flag"></span>
+                                            ENG
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a class="setting-page" href="#">
+                                    <span class="glyphicon glyphicon-cog setting-icon"></span>
+                                    <span class="menu-name visible-xs-inline">
+                                        {{ 'header.navigation.settings' | trans }}
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="help-page" href="#">
+                                    <span class="glyphicon glyphicon-question-sign help-icon"></span>
+                                    <span class="menu-name visible-xs-inline">
+                                        {{ 'header.navigation.help' | trans }}
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    role="button"
+                                >
+                                    <span class="glyphicon glyphicon-off sign-out"></span>
+                                    <span class="menu-name visible-xs-inline">
+                                        {{ 'header.navigation.signout' | trans }}
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul 
+                            class="
+                                nav nav-pills
+                                navbar-right
+                                switch-language-btn-container
+                                hidden-xs hidden-sm
+                                visible-lg visible-md
+                            ">
+                                <li>
+                                    <a 
+                                        class="khmer"
+                                        href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'km-KH'})) }}"
+                                    >
+                                        <span class="flag khmer"></span>
+                                                                                                                   ខ្មែរ
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a 
+                                        href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en-US'})) }}">
+                                        <span class="flag"></span>
+                                        ENG
+                                    </a>
+                                </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    {% endblock %}
+
+    {% block dashboard_content %}
+    {% endblock %}
+
+{% endblock %}

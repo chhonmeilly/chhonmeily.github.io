@@ -1,0 +1,176 @@
+{% trans_default_domain 'homepage' %}
+<div class="bg-secondary" id="register-section">
+    <div class="row text-center">
+        <div class="col-md-5">
+            <h3>{{ 'text.send.package'|trans }}</h3>
+            <a
+                class="btn btn-lg bg-primary"
+                href="{{ path('create_new_client') }}"
+                role="button"
+            >
+                {{ 'btn.register.now'|trans }}
+            </a>
+        </div>
+        <div class="col-md-2">
+            <div class="separate-line bg-primary"></div>
+        </div>
+        <div class="col-md-5">
+            <h3>{{ 'text.make.money'|trans }}</h3>
+            <a
+                class="btn btn-lg bg-primary"
+                href="{{ path('create_new_courier') }}"
+                role="button"
+            >
+                {{ 'btn.become.courier'|trans }}
+            </a>
+        </div>
+  </div>
+</div>
+
+<div class="jumbotron" id="process-section">
+    <div class="row text-center">
+        <h1>{{ 'text.how.it.work'|trans }}</h1>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img
+                src="{{asset('bundles/frontend/images/checklist.png')}}"
+                class="img-responsive"
+                id="process-section-img1"
+                alt="Responsive image"
+            >
+            <h3>{{ 'text.list.items'|trans }}</h3>
+            <span>
+                {{ 'text.list.items.description'|trans }}
+            </span>
+        </div>
+        <div class="col-md-4">
+            <img
+                src="{{asset('bundles/frontend/images/paper_pile.png')}}"
+                class="img-responsive"
+                id="process-section-img2"
+                alt="Responsive image"
+            >
+            <h3>{{ 'text.accept.offer'|trans }}</h3>
+            <span>
+                {{ 'text.accept.offer.description'|trans }}
+            </span>
+        </div>
+        <div class="col-md-4">
+            <img
+                src="{{asset('bundles/frontend/images/checkmark.png')}}"
+                class="img-responsive"
+                id="process-section-img3"
+                alt="Responsive image"
+            >
+            <h3>{{ 'text.send.it.off'|trans }}</h3>
+            <span>
+                {{ 'text.send.it.off.description'|trans }}
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="service-offer-section">
+    <div class="row text-center bg-primary" id="service-offer-title">
+        <h2>{{ 'text.what.we.offer'|trans }}</h2>
+    </div>
+    <div class="row text-center" id="service-offer-content">
+        <div class="col-md-6">
+            <img
+                src="{{asset('bundles/frontend/images/cambodia_map.png')}}"
+                class="img-responsive"
+                alt="Responsive image"
+            >
+        </div>
+        <div class="col-md-6">
+            <h3>{{ 'text.schedule.delivery'|trans }}</h3>
+            <h3>{{ 'text.anywhere'|trans }}</h3>
+            <span>
+                {{ 'text.schedule.delivery.description'|trans }}
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron bg-secondary" id="get-notify-section">
+    <div class="row text-center">
+        <div class="col-md-6" id="get-notify-section-text">
+            <h2>{{ 'text.get.notified'|trans }}</h2>
+            <h2>{{ 'text.incoming.job'|trans }}</h2>
+            <span>
+                {{ 'text.get.notified.description'|trans }}
+            </span>
+        </div>
+        <div class="col-md-6">
+            <img
+                src="{{asset('bundles/frontend/images/press_phone.png')}}"
+                class="img-responsive"
+                id="get-notify-img"
+                alt="Responsive image"
+            >
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" id="track-order-section">
+    <div class="row text-center">
+        <div class="col-md-6">
+            <img
+                src="{{asset('bundles/frontend/images/device_group.png')}}"
+                class="img-responsive"
+                alt="Responsive image"
+            >
+        </div>
+        <div class="col-md-6">
+            <h2>{{ 'text.track.order'|trans }}</h2>
+            <h2>{{ 'text.web.mobile.sms'|trans }}</h2>
+            <span>
+                {{ 'text.track.order.description'|trans }}
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron bg-secondary" id="let-us-know-section">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>{{ 'text.let.us.know'|trans }}</h2>
+            <span class="text-left">
+                {{ 'text.let.us.know.description'|trans }}
+            </span>
+        </div>
+        <div class="col-md-6">
+            <img
+                src="{{asset('bundles/frontend/images/box_taped.png')}}"
+                class="img-responsive"
+                id="let-us-know-img"
+                alt="Responsive image"
+            >
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" id="ask-question-section">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">{{ 'text.ask.question'|trans }}</h2>
+            <h3>{{ 'text.how.to.get.start'|trans }}</h3>
+            <span>
+                {{ 'text.how.to.get.start.answer'|trans }}
+            </span>
+            <h3>{{ 'text.how.much'|trans }}</h3>
+            <h3>{{ 'text.what.area'|trans }}</h3>
+            <h3>{{ 'text.who.resonsible'|trans }}</h3>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron bg-secondary" id="get-ready-section">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2>{{ 'text.ready.to.start'|trans }}</h2>
+            <button class="btn btn-lg bg-primary">{{ 'btn.signup.now'|trans }}</button>
+        </div>
+    </div>
+</div>

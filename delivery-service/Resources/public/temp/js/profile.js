@@ -7,7 +7,7 @@ var profile = (function(){
 			$('.change-password-form input[required]').each(function(){
 				var allValue = $(this).val();
 				if(allValue == '' || allValue == null) {
-					alert('empty');
+					$('.message-area .alert-danger').show();
 					e.preventDefault();
 				}
 			});
